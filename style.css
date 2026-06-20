@@ -8,7 +8,7 @@ body{
 #background-anime-body{
     position:fixed;
     inset:0;
-    background:#00668b;
+    background: #af8bb3;
     animation:bgAnimation 5s infinite alternate;
     z-index:-2;
 }
@@ -93,6 +93,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .project1{
     position: relative;
@@ -148,4 +149,14 @@ footer{
     flex-direction: column;
     bottom: 50px;
     margin-top: 10px;
+}
+a{
+    text-decoration: none;
+}
+#contact button {
+    background-color: aliceblue;
+    color: blue;
+}
+#contact a{
+    color: blue;
 }
