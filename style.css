@@ -1,0 +1,151 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+     overflow-x:hidden; 
+}
+
+/* background-anime*/
+#background-anime-body{
+    position:fixed;
+    inset:0;
+    background:#00668b;
+    animation:bgAnimation 5s infinite alternate;
+    z-index:-2;
+}
+
+@keyframes bgAnimation{
+    from{
+        opacity:0.5;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/* Navbar */
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
+    background:rgba(43,5,51,0.4);
+}
+
+.navbar a{
+    color:#fff;
+    text-decoration:none;
+}
+
+/* Section */
+#home{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* la cercle*/
+.animated-background{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:25px solid #af8bb3;
+    border-top-color:#2b0533;
+    border-bottom-color:#2b0533;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    box-sizing: content-box;  
+    animation:spin 5s linear infinite;
+}
+
+@keyframes spin{
+    from{
+       translate: 0 0; transform:rotate(0deg);
+    }
+    to{
+     translate: 500px 0;   transform:rotate(360deg);
+    }
+}
+
+/* le titre*/
+.animated-background h1{
+    font-size:24px;
+    color:white;
+
+    /* pour que le texte reste fixe*/
+    animation:antiSpin 5s linear infinite;
+}
+
+@keyframes antiSpin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.project1{
+    position: relative;
+    width: 45%;
+    height: 300px;
+    background-image: url("e-comerce.jpeg");
+    opacity: 0.7;
+    border-radius: 5%;
+    flex-direction: column;
+    bottom: 50px;
+}
+.project2{
+    position: relative;
+    width: 45%;
+    height: 300px;
+    background-image: url("images.jpeg");
+    opacity: 0.7;
+    border-radius: 5%;
+    flex-direction: column;
+    bottom: 50px;
+}
+.titre{
+    color: white;
+}
+.texte{
+    color: yellow;
+}
+.lien{
+    position: absolute;
+    bottom: 0;
+}
+button{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+#contact{
+    background-image: url("sm.jpeg");
+    position: relative;
+    width: 45%;
+    height: 300px;
+    opacity: 0.7;
+    border-radius: 5%;
+    flex-direction: column;
+    bottom: 50px;
+    margin-top: 10px;
+}
